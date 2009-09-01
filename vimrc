@@ -172,5 +172,22 @@ set ignorecase
 set smartcase
 
 " Tags
-let g:Tlist_Ctags_Cmd="ctags --exclude='*.js'"
+let g:Tlist_Ctags_Cmd="/usr/bin/ctags"
+
+" Joe Pestro custom modifications
+
+set nowrap
+set lines=40 columns=150
+
+" Hack for MacVim to open folders properly
+let g:netrw_keepdir = 0
+
+" NERDTree settings
+nnoremap <leader>d :NERDTreeToggle<CR>
+let NERDChristmasTree = 1
+let NERDTreeHighlightCursorline = 1
+let NERDTreeMapActivateNode = '<CR>'
+
+" Tag List settings
+map <leader>l :TlistToggle<CR>
 
